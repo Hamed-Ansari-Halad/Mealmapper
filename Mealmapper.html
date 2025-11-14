@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapMyMeal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            margin-top: 40px;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 12px 20px;
+            margin: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Mealmapper</h1>
+    <p>Search recipes, locate ingredients, and compare prices. an   all in one place.</p>
+
+    <div class="container">
+        <input id="recipeInput" type="text" placeholder="Search for a recipe...">
+        <br>
+
+        <button onclick="searchRecipe()">Search Recipe</button>
+        <button onclick="openMap()">Show Ingredients on Map</button>
+        <button onclick="calculatePrice()">Calculate Total Price</button>
+    </div>
+
+    <script>
+        function searchRecipe() {
+            const recipe = document.getElementById('recipeInput').value;
+            alert("Searching for recipe: " + recipe);
+            
+        }
+
+        function openMap() {
+            alert("Opening map with ingredient locations...");
+        }
+
+        function calculatePrice() {
+            alert("Calculating total price of ingredients...");
+        }
+    </script>
+
+
+</body>
+</html>
